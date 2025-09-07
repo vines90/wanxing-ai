@@ -1,0 +1,35 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles for WanXing AI */
+@layer base {
+  html {
+    font-family: Inter, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  body {
+    @apply bg-black text-white;
+    line-height: 1.6;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+  }
+
+  .btn-secondary {
+    @apply bg-black hover:bg-gray-900 text-primary font-semibold py-3 px-6 rounded-lg border-2 border-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-white mb-6;
+  }
+
+  .card {
+    @apply bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-800;
+  }
+}
