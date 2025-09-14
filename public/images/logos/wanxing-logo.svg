@@ -1,0 +1,38 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 万星AI Logo -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E31937"/>
+      <stop offset="100%" style="stop-color:#CC1429"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="30" cy="30" r="25" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- 星形图标 -->
+  <path d="M30 10 L35 22 L48 22 L38 30 L42 42 L30 35 L18 42 L22 30 L12 22 L25 22 Z" 
+        fill="url(#logoGradient)" 
+        stroke="white" 
+        stroke-width="1"/>
+  
+  <!-- 文字 "万星AI" -->
+  <text x="70" y="25" 
+        font-family="PingFang SC, Microsoft YaHei, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="white">万星</text>
+  
+  <text x="130" y="25" 
+        font-family="SF Pro Display, Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="url(#logoGradient)">AI</text>
+        
+  <!-- 副标题 -->
+  <text x="70" y="45" 
+        font-family="Arial, sans-serif" 
+        font-size="10" 
+        fill="#9CA3AF">Professional AI Training</text>
+</svg>
+

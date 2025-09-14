@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRouter } from 'vue-router'
+
+const router = useRouter()
+
+// 双击Logo进入管理后台
+const goToAdmin = () => {
+  router.push('/admin')
+}
 </script>
 
 <template>
@@ -12,6 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink
             to="/"
             class="text-2xl font-bold text-white hover:text-primary transition-colors"
+            @dblclick="goToAdmin"
           >
             万星<span class="text-primary">AI</span>
           </RouterLink>
@@ -24,6 +32,13 @@ import { RouterLink, RouterView } from 'vue-router'
               :class="{ 'text-primary': $route.path === '/' }"
             >
               首页
+            </RouterLink>
+            <RouterLink
+              to="/blog"
+              class="text-gray-300 hover:text-white transition-colors"
+              :class="{ 'text-primary': $route.path.startsWith('/blog') }"
+            >
+              技术博客
             </RouterLink>
             <RouterLink
               to="/about"

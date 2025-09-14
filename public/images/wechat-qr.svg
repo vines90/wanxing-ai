@@ -1,0 +1,62 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 微信二维码占位符 -->
+  <rect width="200" height="200" fill="white" rx="8"/>
+  
+  <!-- QR Code Pattern (简化版) -->
+  <g fill="#000">
+    <!-- 左上角定位块 -->
+    <rect x="10" y="10" width="30" height="30" fill="#000"/>
+    <rect x="15" y="15" width="20" height="20" fill="white"/>
+    <rect x="20" y="20" width="10" height="10" fill="#000"/>
+    
+    <!-- 右上角定位块 -->
+    <rect x="160" y="10" width="30" height="30" fill="#000"/>
+    <rect x="165" y="15" width="20" height="20" fill="white"/>
+    <rect x="170" y="20" width="10" height="10" fill="#000"/>
+    
+    <!-- 左下角定位块 -->
+    <rect x="10" y="160" width="30" height="30" fill="#000"/>
+    <rect x="15" y="165" width="20" height="20" fill="white"/>
+    <rect x="20" y="170" width="10" height="10" fill="#000"/>
+    
+    <!-- 模拟数据点 -->
+    <rect x="50" y="15" width="5" height="5"/>
+    <rect x="60" y="15" width="5" height="5"/>
+    <rect x="75" y="15" width="5" height="5"/>
+    <rect x="85" y="15" width="5" height="5"/>
+    <rect x="100" y="15" width="5" height="5"/>
+    <rect x="115" y="15" width="5" height="5"/>
+    <rect x="130" y="15" width="5" height="5"/>
+    <rect x="145" y="15" width="5" height="5"/>
+    
+    <rect x="15" y="50" width="5" height="5"/>
+    <rect x="25" y="50" width="5" height="5"/>
+    <rect x="50" y="50" width="5" height="5"/>
+    <rect x="65" y="50" width="5" height="5"/>
+    <rect x="80" y="50" width="5" height="5"/>
+    <rect x="95" y="50" width="5" height="5"/>
+    <rect x="110" y="50" width="5" height="5"/>
+    <rect x="125" y="50" width="5" height="5"/>
+    <rect x="140" y="50" width="5" height="5"/>
+    <rect x="155" y="50" width="5" height="5"/>
+    <rect x="170" y="50" width="5" height="5"/>
+    <rect x="185" y="50" width="5" height="5"/>
+    
+    <!-- 更多数据点... -->
+    <rect x="50" y="65" width="5" height="5"/>
+    <rect x="70" y="65" width="5" height="5"/>
+    <rect x="90" y="65" width="5" height="5"/>
+    <rect x="110" y="65" width="5" height="5"/>
+    <rect x="130" y="65" width="5" height="5"/>
+    <rect x="150" y="65" width="5" height="5"/>
+    <rect x="170" y="65" width="5" height="5"/>
+  </g>
+  
+  <!-- 中心logo区域 -->
+  <rect x="85" y="85" width="30" height="30" fill="#E31937" rx="4"/>
+  <text x="100" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold">万星</text>
+  
+  <!-- 底部说明文字 -->
+  <text x="100" y="230" text-anchor="middle" fill="#666" font-size="12">扫码添加微信咨询</text>
+</svg>
+
