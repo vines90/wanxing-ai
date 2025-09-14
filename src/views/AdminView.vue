@@ -203,7 +203,7 @@ const loadRecentPosts = async () => {
   try {
     // 获取最近的文章
     await blogStore.fetchPosts({ limit: 5 })
-    recentPosts.value = blogStore.posts
+    recentPosts.value = [...blogStore.posts] as BlogPost[]
   } catch (error) {
     console.error('Failed to load recent posts:', error)
   }

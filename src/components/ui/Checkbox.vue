@@ -94,7 +94,7 @@ const checkboxId = ref(generateId('checkbox'))
 const checkboxValue = computed({
   get: () => {
     if (Array.isArray(props.modelValue)) {
-      return props.value !== undefined ? props.modelValue.includes(props.value) : false
+      return props.value !== undefined ? props.modelValue.includes(props.value as never) : false
     }
     return props.modelValue ?? false
   },
@@ -102,16 +102,16 @@ const checkboxValue = computed({
     if (Array.isArray(props.modelValue) && props.value !== undefined) {
       const newValue = [...props.modelValue]
       if (checked) {
-        if (!newValue.includes(props.value)) {
-          newValue.push(props.value)
+        if (!newValue.includes(props.value as never)) {
+          newValue.push(props.value as never)
         }
       } else {
-        const index = newValue.indexOf(props.value)
+        const index = newValue.indexOf(props.value as never)
         if (index > -1) {
           newValue.splice(index, 1)
         }
       }
-      emit('update:modelValue', newValue)
+      emit('update:modelValue', newValue as string[] | number[])
     } else {
       emit('update:modelValue', checked)
     }

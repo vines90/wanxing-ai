@@ -112,7 +112,7 @@
       <div class="py-16 px-4">
         <div class="container mx-auto max-w-4xl">
           <!-- Post Content -->
-          <BlogContentRenderer :post="post" />
+          <BlogContentRenderer :post="{ ...post } as BlogPost" />
 
           <!-- Share Section -->
           <div class="mt-12 pt-8 border-t border-border">

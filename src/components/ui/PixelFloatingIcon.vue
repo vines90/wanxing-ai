@@ -230,7 +230,7 @@ const showDialogue = ref(false)
 const currentMessage = ref('')
 const dialogueTimeout = ref<number | null>(null)
 
-let animationFrame: number
+let animationFrame: number | null = null
 
 // 对话框消息库
 const dialogueMessages = [

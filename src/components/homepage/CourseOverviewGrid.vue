@@ -29,7 +29,7 @@
         <CourseCard
           v-for="course in courseStore.courses"
           :key="course.id"
-          :course="course"
+          :course="{ ...course } as Course"
           @enroll="handleEnroll"
         />
       </div>

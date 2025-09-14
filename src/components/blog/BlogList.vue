@@ -19,7 +19,7 @@
         <BlogCard
           v-for="post in blogStore.posts"
           :key="post.id"
-          :post="post"
+          :post="{ ...post } as BlogPost"
           @read="handleReadPost"
         />
       </div>

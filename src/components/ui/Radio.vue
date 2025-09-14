@@ -93,7 +93,7 @@ const radioId = ref(generateId('radio'))
 
 const radioValue = computed({
   get: () => props.modelValue,
-  set: (value) => emit('update:modelValue', value)
+  set: (value) => emit('update:modelValue', value ?? props.value)
 })
 
 const radioClasses = computed(() => {

@@ -296,7 +296,7 @@ const recommendations = ref<CourseRecommendation[]>([])
 
 const formData = ref<AssessmentData>({
   name: '',
-  age: '',
+  age: 25,
   education: '',
   experience: '',
   interests: [],
@@ -379,7 +379,7 @@ const submitAssessment = async () => {
     // 格式化数据
     const assessmentData: AssessmentData = {
       name: formData.value.name,
-      age: parseInt(formData.value.age.split('-')[0]) || 25,
+      age: formData.value.age,
       education: formData.value.education,
       experience: formData.value.experience,
       interests: formData.value.interests,
@@ -411,7 +411,7 @@ const restartAssessment = () => {
   currentStep.value = 1
   formData.value = {
     name: '',
-    age: '',
+    age: 25,
     education: '',
     experience: '',
     interests: [],

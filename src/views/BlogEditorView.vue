@@ -268,7 +268,7 @@ console.log('Hello World');
                 <div>
                   <label class="form-label">Meta 标题</label>
                   <input
-                    v-model="post.seo.metaTitle"
+                    v-model="post.seo!.metaTitle"
                     type="text"
                     class="form-input"
                     :placeholder="post.title"
@@ -278,7 +278,7 @@ console.log('Hello World');
                 <div>
                   <label class="form-label">Meta 描述</label>
                   <textarea
-                    v-model="post.seo.metaDescription"
+                    v-model="post.seo!.metaDescription"
                     class="form-input resize-none"
                     rows="3"
                     :placeholder="post.excerpt"

@@ -119,7 +119,11 @@ const courseIcon = computed(() => {
     'deep-learning': 'CpuChipIcon',
     nlp: 'ChatBubbleLeftRightIcon',
     'computer-vision': 'EyeIcon',
-    'data-science': 'ChartBarIcon'
+    'data-science': 'ChartBarIcon',
+    'ai-media': 'VideoCameraIcon',
+    'prompt-engineering': 'CommandLineIcon',
+    'office-automation': 'DocumentTextIcon',
+    'ai-programming': 'CodeBracketIcon'
   }
   
   // Return a simple div if icon not found

@@ -279,7 +279,7 @@ const validateForm = (): boolean => {
     errors.name = '请输入您的姓名'
   }
   
-  if (!form.phone.trim()) {
+  if (!form.phone?.trim()) {
     errors.phone = '请输入您的手机号'
   } else if (!/^1[3-9]\d{9}$/.test(form.phone.trim())) {
     errors.phone = '请输入有效的手机号'

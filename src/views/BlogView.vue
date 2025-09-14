@@ -36,7 +36,7 @@
           <aside class="lg:col-span-1">
             <div class="sticky top-8">
               <BlogFilters
-                :categories="blogStore.categories"
+                :categories="[...blogStore.categories]"
                 :filters="currentFilters"
                 @filter-change="handleFilterChange"
               />

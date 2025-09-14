@@ -24,7 +24,7 @@ export const formatDate = (date: Date | string): string => {
 /**
  * Debounce function calls
  */
-export const debounce = <T extends (...args: unknown[]) => void>(
+export const debounce = <T extends (...args: any[]) => void>(
   fn: T,
   delay: number,
 ): ((...args: Parameters<T>) => void) => {
